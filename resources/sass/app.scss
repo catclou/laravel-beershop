@@ -1,1 +1,53 @@
-//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card {
+        width: calc((100% / 5) - 30px);
+        margin: 15px;
+        padding: 20px;
+        border: 1px solid dimgray;
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            margin: 5px 0;
+        }
+
+        h4:last-child {
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: steelblue;
+            align-self: flex-end;
+        }
+    }
+}
+
+.container-product {
+    padding: 25px;
+
+    h4 {
+        margin: 10px 0;
+    }
+    
+    .info-product {
+        color: red;
+    }
+}
