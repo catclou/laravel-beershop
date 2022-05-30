@@ -12,6 +12,13 @@ class PageController extends Controller
 
         $beers = Beer::all();
 
-        return view('pages.home' , compact('beers'));
+        return view('pages.index' , compact('beers'));
+    }
+
+    public function show($id) {
+
+        $beer = Beer::findOrFail( $id );
+
+        return view('pages.show' , compact('beer'));
     }
 }
